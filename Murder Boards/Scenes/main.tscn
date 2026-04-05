@@ -19,3 +19,5 @@ offset_top = 149.0
 offset_right = 182.0
 offset_bottom = 161.0
 script = ExtResource("1_jjgbg")
+
+[connection signal="pressed" from="Panel/Button" to="Panel/Button" method="_on_pressed"]
