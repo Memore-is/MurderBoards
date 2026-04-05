@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://divdsa7ak6cmm"]
+
+[ext_resource type="Script" uid="uid://cq0pkre0jc50f" path="res://Scripts/startbutton.gd" id="1_jjgbg"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bo1nx"]
+bg_color = Color(0.64091, 0.573155, 0.661545, 1)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Panel" type="Panel" parent="."]
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_bo1nx")
+
+[node name="Button" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 152.0
+offset_top = 149.0
+offset_right = 182.0
+offset_bottom = 161.0
+script = ExtResource("1_jjgbg")
