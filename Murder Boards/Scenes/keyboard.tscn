@@ -35,8 +35,10 @@ offset_bottom = 759.0
 
 [node name="A" type="Button" parent="Panel"]
 layout_mode = 0
-offset_right = 8.0
-offset_bottom = 8.0
+offset_left = 1.0
+offset_top = 2.0
+offset_right = 9.0
+offset_bottom = 10.0
 script = ExtResource("1_lje7h")
 
 [node name="B" type="Button" parent="Panel"]
@@ -70,101 +72,121 @@ offset_bottom = 8.0
 script = ExtResource("6_2j86p")
 
 [node name="G" type="Button" parent="Panel"]
+layout_mode = 0
 offset_right = 8.0
 offset_bottom = 8.0
 script = ExtResource("7_uhqyl")
 
 [node name="H" type="Button" parent="Panel"]
+layout_mode = 0
 offset_right = 8.0
 offset_bottom = 8.0
 script = ExtResource("8_26etc")
 
 [node name="I" type="Button" parent="Panel"]
+layout_mode = 0
 offset_right = 8.0
 offset_bottom = 8.0
 script = ExtResource("9_6gtmv")
 
 [node name="J" type="Button" parent="Panel"]
+layout_mode = 0
 offset_right = 8.0
 offset_bottom = 8.0
 script = ExtResource("10_qe2si")
 
 [node name="K" type="Button" parent="Panel"]
+layout_mode = 0
 offset_right = 8.0
 offset_bottom = 8.0
 script = ExtResource("11_birto")
 
 [node name="L" type="Button" parent="Panel"]
+layout_mode = 0
 offset_right = 8.0
 offset_bottom = 8.0
 script = ExtResource("12_36dfy")
 
 [node name="M" type="Button" parent="Panel"]
+layout_mode = 0
 offset_right = 8.0
 offset_bottom = 8.0
 script = ExtResource("13_aa7tg")
 
 [node name="N" type="Button" parent="Panel"]
+layout_mode = 0
 offset_right = 8.0
 offset_bottom = 8.0
 script = ExtResource("14_lsrvw")
 
 [node name="O" type="Button" parent="Panel"]
+layout_mode = 0
 offset_right = 8.0
 offset_bottom = 8.0
 script = ExtResource("15_05krr")
 
 [node name="P" type="Button" parent="Panel"]
+layout_mode = 0
 offset_right = 8.0
 offset_bottom = 8.0
 script = ExtResource("16_nj0t2")
 
 [node name="Q" type="Button" parent="Panel"]
+layout_mode = 0
 offset_right = 8.0
 offset_bottom = 8.0
 script = ExtResource("17_yhotn")
 
 [node name="R" type="Button" parent="Panel"]
+layout_mode = 0
 offset_right = 8.0
 offset_bottom = 8.0
 script = ExtResource("18_yg48v")
 
 [node name="S" type="Button" parent="Panel"]
+layout_mode = 0
 offset_right = 8.0
 offset_bottom = 8.0
 script = ExtResource("19_qcjyk")
 
 [node name="T" type="Button" parent="Panel"]
+layout_mode = 0
 offset_right = 8.0
 offset_bottom = 8.0
 script = ExtResource("20_35wy7")
 
 [node name="U" type="Button" parent="Panel"]
+layout_mode = 0
 offset_right = 8.0
 offset_bottom = 8.0
 script = ExtResource("21_h45va")
 
 [node name="V" type="Button" parent="Panel"]
+layout_mode = 0
 offset_right = 8.0
 offset_bottom = 8.0
 script = ExtResource("22_5j5yr")
 
 [node name="W" type="Button" parent="Panel"]
+layout_mode = 0
 offset_right = 8.0
 offset_bottom = 8.0
 script = ExtResource("23_i0ocj")
 
 [node name="X" type="Button" parent="Panel"]
+layout_mode = 0
 offset_right = 8.0
 offset_bottom = 8.0
 script = ExtResource("24_46433")
 
 [node name="Y" type="Button" parent="Panel"]
+layout_mode = 0
 offset_right = 8.0
 offset_bottom = 8.0
 script = ExtResource("25_fc67n")
 
 [node name="Z" type="Button" parent="Panel"]
+layout_mode = 0
 offset_right = 8.0
 offset_bottom = 8.0
 script = ExtResource("26_jd04e")
