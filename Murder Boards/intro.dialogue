@@ -1,0 +1,17 @@
+~ start
+You wake up at a sketchy looking place with only a old ass computer in front of you. You wonder what's happening.
+
+Instructions: Press any character keys to play. Each leter represents a different character.
+Instructions: Find out who the killer is.
+Instructions: You are running out of time.
+Instructions: Good Luck!
+Instructions: Press enter or click on the start button to begin.
+
+Instructions: c
+- Choose
+	Instructions: hi?
+- leave
+	Instructions: bye?
+=> END
+#- Start again => start
+#- End the conversation => END
