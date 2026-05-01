@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://bx3cysqw7tn4h"]
+[gd_scene load_steps=4 format=3 uid="uid://bx3cysqw7tn4h"]
 
 [ext_resource type="Script" uid="uid://t4uyt1d2s7ky" path="res://Scripts/button.gd" id="1_jjgbg"]
+[ext_resource type="AudioStream" uid="uid://b0lg07gkdc8l5" path="res://Assets/BGM/Button-click.wav" id="2_bo1nx"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jjgbg"]
 
@@ -56,5 +57,8 @@ grow_vertical = 2
 theme_override_font_sizes/font_size = 30
 text = "Murder"
 script = ExtResource("1_jjgbg")
+
+[node name="Buttonclick" type="AudioStreamPlayer" parent="Button"]
+stream = ExtResource("2_bo1nx")
 
 [connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
