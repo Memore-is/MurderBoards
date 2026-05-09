@@ -1,5 +1,7 @@
 extends Control
 
+@onready var window = $Window
+
 func _ready():
 	DialogueManager.show_dialogue_balloon(preload("res://Dialogue/intro.dialogue"), "start")
 
@@ -11,4 +13,4 @@ func _on_button_pressed():
 
 
 func _on_folder_pressed():
-	pass # Replace with function body.
+	window.visible = true
