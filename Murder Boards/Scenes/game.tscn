@@ -1,0 +1,46 @@
+[gd_scene load_steps=5 format=3 uid="uid://c44hpdnafgqim"]
+
+[ext_resource type="Script" uid="uid://beuw2y7t4m0s0" path="res://Scripts/game.gd" id="1_qxrlw"]
+[ext_resource type="Texture2D" uid="uid://darwlw361mmjv" path="res://Assets/Background/k.png" id="2_wrm1d"]
+[ext_resource type="PackedScene" uid="uid://cw6o4h8g0jmi" path="res://Scenes/startbutton.tscn" id="3_wrm1d"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_py1g8"]
+texture = ExtResource("2_wrm1d")
+
+[node name="Screen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_qxrlw")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_py1g8")
+
+[node name="Browser" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 372.0
+offset_top = 177.0
+offset_right = 380.0
+offset_bottom = 185.0
+text = "Browser
+"
+
+[node name="Folder" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 628.0
+offset_top = 311.0
+offset_right = 672.0
+offset_bottom = 342.0
+text = "User"
+
+[node name="Button2" parent="." instance=ExtResource("3_wrm1d")]
+layout_mode = 1

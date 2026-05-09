@@ -5,4 +5,4 @@ func _on_pressed():
 	
 	await $Buttonclick.finished
 	
-	get_tree().change_scene_to_file("res://Scenes/intro.tscn")
+	get_tree().change_scene_to_file("res://Scenes/game.tscn")

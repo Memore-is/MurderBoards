@@ -1,0 +1,47 @@
+[gd_scene load_steps=3 format=3 uid="uid://4hstumkc1bd7"]
+
+[ext_resource type="Script" uid="uid://co6jhrgcf5l8c" path="res://window.gd" id="1_808dq"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wdeh2"]
+bg_color = Color(0.823924, 0.823924, 0.823924, 1)
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_808dq")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_wdeh2")
+
+[node name="Title" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 55.0
+offset_top = 10.0
+offset_right = 1104.0
+offset_bottom = 60.0
+
+[node name="Close" type="Button" parent="Panel"]
+layout_mode = 0
+offset_right = 33.0
+offset_bottom = 63.0
+theme_override_font_sizes/font_size = 40
+text = "X"
+
+[node name="Info" type="RichTextLabel" parent="Panel"]
+layout_mode = 0
+offset_left = 29.0
+offset_top = 110.0
+offset_right = 1115.0
+offset_bottom = 617.0
+
+[connection signal="pressed" from="Panel/Close" to="." method="_on_close_pressed"]
