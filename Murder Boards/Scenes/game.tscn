@@ -1,12 +1,16 @@
-[gd_scene load_steps=6 format=3 uid="uid://c44hpdnafgqim"]
+[gd_scene load_steps=8 format=3 uid="uid://c44hpdnafgqim"]
 
 [ext_resource type="Script" uid="uid://beuw2y7t4m0s0" path="res://Scripts/game.gd" id="1_qxrlw"]
 [ext_resource type="Texture2D" uid="uid://darwlw361mmjv" path="res://Assets/Background/k.png" id="2_wrm1d"]
 [ext_resource type="PackedScene" uid="uid://cw6o4h8g0jmi" path="res://Scenes/startbutton.tscn" id="3_wrm1d"]
 [ext_resource type="PackedScene" uid="uid://4hstumkc1bd7" path="res://Window.tscn" id="4_3dryh"]
+[ext_resource type="FontFile" uid="uid://blrx20hf1j6dp" path="res://Assets/font.ttf" id="5_wowpa"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_py1g8"]
 texture = ExtResource("2_wrm1d")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i6g32"]
+bg_color = Color(0, 0, 0, 1)
 
 [node name="Screen" type="Control"]
 layout_mode = 3
@@ -29,15 +33,14 @@ theme_override_styles/panel = SubResource("StyleBoxTexture_py1g8")
 [node name="StartButton" parent="Panel" instance=ExtResource("3_wrm1d")]
 layout_mode = 1
 
-[node name="Browser" type="Button" parent="Panel"]
-visible = false
+[node name="Terminal" type="Button" parent="Panel"]
 layout_mode = 0
-offset_left = 372.0
-offset_top = 177.0
-offset_right = 380.0
-offset_bottom = 185.0
-text = "Browser
-"
+offset_left = 324.0
+offset_top = 194.0
+offset_right = 410.0
+offset_bottom = 228.0
+theme_override_fonts/font = ExtResource("5_wowpa")
+text = "Terminal"
 
 [node name="Folder" type="Button" parent="Panel"]
 layout_mode = 0
@@ -45,14 +48,224 @@ offset_left = 325.0
 offset_top = 145.0
 offset_right = 369.0
 offset_bottom = 176.0
-text = "User"
+theme_override_fonts/font = ExtResource("5_wowpa")
+text = "Folder"
 
 [node name="Window" parent="." instance=ExtResource("4_3dryh")]
 visible = false
 layout_mode = 1
-offset_left = 485.0
-offset_top = 201.0
-offset_right = -362.0
-offset_bottom = -249.0
+offset_left = 298.0
+offset_top = 119.0
+offset_right = -272.0
+offset_bottom = -103.0
 
+[node name="Panel" parent="Window" index="0"]
+offset_left = -1.0
+offset_right = 1.0
+offset_bottom = 2.0
+
+[node name="Title" parent="Window/Panel" index="0"]
+offset_left = 42.0
+offset_top = 7.0
+offset_right = 275.0
+offset_bottom = 57.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Folder"
+
+[node name="Info" parent="Window/Panel" index="2"]
+visible = false
+
+[node name="Button" type="Button" parent="Window/Panel" index="3"]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 82.0
+offset_right = 105.0
+offset_bottom = 136.0
+theme_override_fonts/font = ExtResource("5_wowpa")
+text = "cat.png"
+
+[node name="Button6" type="Button" parent="Window/Panel" index="4"]
+layout_mode = 0
+offset_left = 38.0
+offset_top = 156.0
+offset_right = 103.0
+offset_bottom = 210.0
+theme_override_fonts/font = ExtResource("5_wowpa")
+text = "Web Browser"
+
+[node name="Button7" type="Button" parent="Window/Panel" index="5"]
+layout_mode = 0
+offset_left = 193.0
+offset_top = 156.0
+offset_right = 304.0
+offset_bottom = 210.0
+theme_override_fonts/font = ExtResource("5_wowpa")
+text = "answer
+"
+
+[node name="Button5" type="Button" parent="Window/Panel" index="6"]
+layout_mode = 0
+offset_left = 483.0
+offset_top = 79.0
+offset_right = 548.0
+offset_bottom = 133.0
+theme_override_fonts/font = ExtResource("5_wowpa")
+text = "?
+"
+
+[node name="Button2" type="Button" parent="Window/Panel" index="7"]
+layout_mode = 0
+offset_left = 381.0
+offset_top = 80.0
+offset_right = 469.0
+offset_bottom = 134.0
+theme_override_fonts/font = ExtResource("5_wowpa")
+text = "funny.txt"
+
+[node name="Button3" type="Button" parent="Window/Panel" index="8"]
+layout_mode = 0
+offset_left = 266.0
+offset_top = 82.0
+offset_right = 366.0
+offset_bottom = 136.0
+theme_override_fonts/font = ExtResource("5_wowpa")
+text = "empty.pdf"
+
+[node name="Button4" type="Button" parent="Window/Panel" index="9"]
+layout_mode = 0
+offset_left = 135.0
+offset_top = 81.0
+offset_right = 253.0
+offset_bottom = 135.0
+theme_override_fonts/font = ExtResource("5_wowpa")
+text = "achilles.png
+"
+
+[node name="Window2" parent="." instance=ExtResource("4_3dryh")]
+visible = false
+layout_mode = 1
+offset_left = 298.0
+offset_top = 119.0
+offset_right = -272.0
+offset_bottom = -103.0
+
+[node name="Panel" parent="Window2" index="0"]
+offset_left = -1.0
+offset_right = 1.0
+offset_bottom = 2.0
+
+[node name="Title" parent="Window2/Panel" index="0"]
+offset_left = 42.0
+offset_top = 7.0
+offset_right = 275.0
+offset_bottom = 57.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Folder"
+
+[node name="Info" parent="Window2/Panel" index="2"]
+visible = false
+
+[node name="Button" type="Button" parent="Window2/Panel" index="3"]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 82.0
+offset_right = 105.0
+offset_bottom = 136.0
+theme_override_fonts/font = ExtResource("5_wowpa")
+text = "cat.png"
+
+[node name="Button6" type="Button" parent="Window2/Panel" index="4"]
+layout_mode = 0
+offset_left = 38.0
+offset_top = 156.0
+offset_right = 103.0
+offset_bottom = 210.0
+theme_override_fonts/font = ExtResource("5_wowpa")
+text = "Web Browser"
+
+[node name="Button7" type="Button" parent="Window2/Panel" index="5"]
+layout_mode = 0
+offset_left = 193.0
+offset_top = 156.0
+offset_right = 304.0
+offset_bottom = 210.0
+theme_override_fonts/font = ExtResource("5_wowpa")
+text = "answer
+"
+
+[node name="Button5" type="Button" parent="Window2/Panel" index="6"]
+layout_mode = 0
+offset_left = 483.0
+offset_top = 79.0
+offset_right = 548.0
+offset_bottom = 133.0
+theme_override_fonts/font = ExtResource("5_wowpa")
+text = "?
+"
+
+[node name="Button2" type="Button" parent="Window2/Panel" index="7"]
+layout_mode = 0
+offset_left = 381.0
+offset_top = 80.0
+offset_right = 469.0
+offset_bottom = 134.0
+theme_override_fonts/font = ExtResource("5_wowpa")
+text = "funny.txt"
+
+[node name="Button3" type="Button" parent="Window2/Panel" index="8"]
+layout_mode = 0
+offset_left = 266.0
+offset_top = 82.0
+offset_right = 366.0
+offset_bottom = 136.0
+theme_override_fonts/font = ExtResource("5_wowpa")
+text = "empty.pdf"
+
+[node name="Button4" type="Button" parent="Window2/Panel" index="9"]
+layout_mode = 0
+offset_left = 135.0
+offset_top = 81.0
+offset_right = 253.0
+offset_bottom = 135.0
+theme_override_fonts/font = ExtResource("5_wowpa")
+text = "achilles.png
+"
+
+[node name="Terminal" parent="." instance=ExtResource("4_3dryh")]
+visible = false
+layout_mode = 1
+offset_left = 299.0
+offset_top = 119.0
+offset_right = -266.0
+offset_bottom = -102.0
+
+[node name="Panel" parent="Terminal" index="0"]
+offset_right = -4.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_i6g32")
+
+[node name="Title" parent="Terminal/Panel" index="0"]
+text = "Terminal"
+
+[node name="Info" parent="Terminal/Panel" index="2"]
+offset_left = 14.0
+offset_top = 72.0
+offset_right = 573.0
+offset_bottom = 416.0
+theme_override_colors/default_color = Color(0, 1, 0, 1)
+text = "Enter Password: "
+
+[node name="LineEdit" type="LineEdit" parent="Terminal/Panel" index="3"]
+layout_mode = 0
+offset_left = 173.0
+offset_top = 73.0
+offset_right = 241.562
+offset_bottom = 104.0
+theme_override_colors/font_color = Color(0, 1, 0, 1)
+theme_override_fonts/font = ExtResource("5_wowpa")
+
+[connection signal="pressed" from="Panel/Terminal" to="." method="_on_terminal_pressed"]
 [connection signal="pressed" from="Panel/Folder" to="." method="_on_folder_pressed"]
+
+[editable path="Window"]
+[editable path="Window2"]
+[editable path="Terminal"]

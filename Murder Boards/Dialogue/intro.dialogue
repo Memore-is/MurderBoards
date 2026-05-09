@@ -1,5 +1,7 @@
 ~ start
-Hi Project 404
+Hi Project 404,
+You are currently inside a locked room.
+Your only way of escape is through this conputer.
+Enter the correct password in the terminal to unlock the door.
+Good Luck.
 => END
-#- Start again => start
-#- End the conversation => END
