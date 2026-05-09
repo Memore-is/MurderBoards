@@ -34,7 +34,7 @@ corner_radius_top_right = 1000
 corner_radius_bottom_right = 1000
 corner_radius_bottom_left = 1000
 
-[node name="intro" type="Control"]
+[node name="Screen" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
