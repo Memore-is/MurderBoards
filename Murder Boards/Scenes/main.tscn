@@ -93,7 +93,7 @@ grow_vertical = 2
 theme_override_colors/font_color = Color(0, 1, 0, 1)
 theme_override_fonts/font = ExtResource("1_8gbba")
 theme_override_font_sizes/font_size = 75
-text = "404: Found"
+text = "404: Found?"
 justification_flags = 161
 
 [node name="Button" type="Button" parent="."]
