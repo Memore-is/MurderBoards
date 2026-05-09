@@ -1,5 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://bx3cysqw7tn4h"]
+[gd_scene load_steps=5 format=3 uid="uid://bx3cysqw7tn4h"]
 
+[ext_resource type="FontFile" uid="uid://blrx20hf1j6dp" path="res://Assets/font.ttf" id="1_8gbba"]
 [ext_resource type="Script" uid="uid://t4uyt1d2s7ky" path="res://Scripts/button.gd" id="1_jjgbg"]
 [ext_resource type="AudioStream" uid="uid://b0lg07gkdc8l5" path="res://Assets/BGM/Button-click.wav" id="2_bo1nx"]
 
@@ -37,6 +38,7 @@ offset_right = 255.0
 offset_bottom = -151.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_8gbba")
 theme_override_font_sizes/font_size = 90
 text = "Murder Boards"
 justification_flags = 161
@@ -54,6 +56,7 @@ offset_right = 119.0
 offset_bottom = 207.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_8gbba")
 theme_override_font_sizes/font_size = 30
 text = "Murder"
 script = ExtResource("1_jjgbg")
