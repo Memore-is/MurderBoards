@@ -55,15 +55,20 @@ offset_bottom = 386.0
 
 [node name="Info" type="RichTextLabel" parent="Panel/Scroll"]
 layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
 theme_override_colors/default_color = Color(0, 1, 0, 1)
 theme_override_fonts/normal_font = ExtResource("2_b5qft")
+bbcode_enabled = true
+fit_content = true
+scroll_following = true
 
 [node name="Input" type="LineEdit" parent="Panel"]
 layout_mode = 2
-offset_left = 40.0
-offset_top = 31.0
-offset_right = 144.0
-offset_bottom = 65.0
+offset_left = 17.0
+offset_top = 367.0
+offset_right = 570.0
+offset_bottom = 401.0
 theme_override_colors/font_color = Color(0, 1, 0, 1)
 theme_override_fonts/font = ExtResource("2_b5qft")
 

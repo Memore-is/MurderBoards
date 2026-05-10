@@ -68,9 +68,11 @@ offset_right = -273.0
 offset_bottom = -102.0
 
 [node name="Terminal" parent="." instance=ExtResource("6_v158k")]
+visible = false
 layout_mode = 1
 
 [node name="Trash" parent="." instance=ExtResource("7_h4fw4")]
+visible = false
 layout_mode = 1
 
 [connection signal="pressed" from="Panel/Terminal" to="." method="_on_terminal_pressed"]

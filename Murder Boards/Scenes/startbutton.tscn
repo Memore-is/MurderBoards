@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://cw6o4h8g0jmi"]
 
-[ext_resource type="Script" uid="uid://t4uyt1d2s7ky" path="res://Scripts/button.gd" id="1_0go6c"]
+[ext_resource type="Script" uid="uid://t4uyt1d2s7ky" path="res://Scripts/startbutton.gd" id="1_0go6c"]
 [ext_resource type="AudioStream" uid="uid://b0lg07gkdc8l5" path="res://Assets/BGM/Button-click.wav" id="2_erdrk"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_upt1g"]
