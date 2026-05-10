@@ -1,11 +1,11 @@
 extends "res://Scripts/window.gd"
 
-@onready var file = $Corrupted_file
+@onready var hint = $hints
 @onready var png = $Scary_png
 @onready var pdf = $Story_pdf
 
 func _on_corrupted_file_pressed():
-	file.visible = true
+	hint.visible = true
 
 func _on_scary_png_pressed():
 	png.visible = true

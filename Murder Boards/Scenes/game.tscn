@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://c44hpdnafgqim"]
+[gd_scene load_steps=10 format=3 uid="uid://c44hpdnafgqim"]
 
 [ext_resource type="Script" uid="uid://beuw2y7t4m0s0" path="res://Scripts/game.gd" id="1_qxrlw"]
 [ext_resource type="Texture2D" uid="uid://darwlw361mmjv" path="res://Assets/Background/k.png" id="2_wrm1d"]
@@ -7,6 +7,7 @@
 [ext_resource type="FontFile" uid="uid://blrx20hf1j6dp" path="res://Assets/font.ttf" id="5_wowpa"]
 [ext_resource type="PackedScene" uid="uid://bai43nwlog473" path="res://Scenes/terminal.tscn" id="6_v158k"]
 [ext_resource type="PackedScene" uid="uid://kdhm8d5pj44t" path="res://Scenes/trash.tscn" id="7_h4fw4"]
+[ext_resource type="AudioStream" uid="uid://x084vxm81erx" path="res://Assets/BGM/Mouse-click.wav" id="8_v158k"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_py1g8"]
 texture = ExtResource("2_wrm1d")
@@ -55,7 +56,6 @@ theme_override_fonts/font = ExtResource("5_wowpa")
 text = "Folder"
 
 [node name="Trash" type="Button" parent="Panel"]
-visible = false
 layout_mode = 0
 offset_left = 352.0
 offset_top = 251.0
@@ -79,6 +79,9 @@ layout_mode = 1
 [node name="Trash" parent="." instance=ExtResource("7_h4fw4")]
 visible = false
 layout_mode = 1
+
+[node name="mouse" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("8_v158k")
 
 [connection signal="pressed" from="Panel/Terminal" to="." method="_on_terminal_pressed"]
 [connection signal="pressed" from="Panel/Folder" to="." method="_on_folder_pressed"]
