@@ -10,7 +10,7 @@ func _ready():
 func _on_input_text_submitted(new_text):
 	output.append_text("> " + new_text + "\n")
 	
-	if new_text == "Z167R29":
+	if new_text == "Z16N29":
 		output.append_text("Correct Password./nDoor unlocking...")
 		get_tree().change_scene_to_file("res://Scenes/free.tscn")
 	else:

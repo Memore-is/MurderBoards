@@ -176,6 +176,7 @@ offset_bottom = 390.0
 theme_override_styles/panel = SubResource("StyleBoxTexture_d3elk")
 
 [node name="empty" parent="." instance=ExtResource("3_kskap")]
+visible = false
 layout_mode = 1
 
 [node name="Title" parent="empty/Panel" index="0"]

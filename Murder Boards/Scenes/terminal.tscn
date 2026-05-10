@@ -31,10 +31,10 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_0u45f")
 
 [node name="Title" type="Label" parent="Panel"]
 layout_mode = 0
-offset_left = 55.0
-offset_top = 10.0
-offset_right = 1104.0
-offset_bottom = 60.0
+offset_left = 52.0
+offset_top = 17.0
+offset_right = 1101.0
+offset_bottom = 67.0
 theme_override_fonts/font = ExtResource("2_b5qft")
 theme_override_font_sizes/font_size = 20
 text = "Terminal"
@@ -65,10 +65,10 @@ scroll_following = true
 
 [node name="Input" type="LineEdit" parent="Panel"]
 layout_mode = 2
-offset_left = 17.0
-offset_top = 367.0
-offset_right = 570.0
-offset_bottom = 401.0
+offset_left = 15.0
+offset_top = 373.0
+offset_right = 568.0
+offset_bottom = 407.0
 theme_override_colors/font_color = Color(0, 1, 0, 1)
 theme_override_fonts/font = ExtResource("2_b5qft")
 

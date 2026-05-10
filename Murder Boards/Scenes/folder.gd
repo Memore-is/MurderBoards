@@ -8,12 +8,6 @@ extends "res://Scripts/window.gd"
 @onready var browser = $browser
 @onready var answer = $answer
 
-func _ready():
-	pass 
-	
-func _process(_delta):
-	pass
-
 
 func _on_cat_png_pressed():
 	cat.visible = true
