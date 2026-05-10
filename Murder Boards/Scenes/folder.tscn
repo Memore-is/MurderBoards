@@ -1,11 +1,19 @@
-[gd_scene load_steps=5 format=3 uid="uid://b0rdh7qmmpwfh"]
+[gd_scene load_steps=9 format=3 uid="uid://b0rdh7qmmpwfh"]
 
 [ext_resource type="Script" uid="uid://841wn2riutct" path="res://Scenes/folder.gd" id="1_a5ds2"]
 [ext_resource type="FontFile" uid="uid://blrx20hf1j6dp" path="res://Assets/font.ttf" id="2_x8bgb"]
 [ext_resource type="PackedScene" uid="uid://4hstumkc1bd7" path="res://Scenes/Window.tscn" id="3_kskap"]
+[ext_resource type="Texture2D" uid="uid://ow8etuiwbec4" path="res://Assets/Background/cat.jpeg" id="4_kf6qf"]
+[ext_resource type="Texture2D" uid="uid://dlcqg4fd661x0" path="res://Assets/Background/Achilles.jpg" id="5_n6x5c"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wdeh2"]
 bg_color = Color(0.823924, 0.823924, 0.823924, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_cbu3t"]
+texture = ExtResource("4_kf6qf")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_d3elk"]
+texture = ExtResource("5_n6x5c")
 
 [node name="Folder" type="Control"]
 layout_mode = 3
@@ -120,9 +128,37 @@ text = "answer
 visible = false
 layout_mode = 1
 
+[node name="Panel2" type="Panel" parent="cat"]
+layout_mode = 0
+offset_left = 71.0
+offset_top = 54.0
+offset_right = 506.0
+offset_bottom = 371.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_cbu3t")
+
 [node name="achilles" parent="." instance=ExtResource("3_kskap")]
-visible = false
 layout_mode = 1
+
+[node name="Title" parent="achilles/Panel" index="0"]
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "The warrior's tale"
+
+[node name="Info" parent="achilles/Panel" index="2"]
+offset_left = 24.0
+offset_top = 92.0
+offset_right = 1110.0
+offset_bottom = 599.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+text = "The warrior plays the whole day, causes a delay.
+Who knew someone's death would lead him full astray."
+
+[node name="Panel2" type="Panel" parent="achilles"]
+layout_mode = 0
+offset_left = 125.0
+offset_top = 167.0
+offset_right = 430.0
+offset_bottom = 390.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_d3elk")
 
 [node name="empty" parent="." instance=ExtResource("3_kskap")]
 visible = false
@@ -138,13 +174,42 @@ offset_right = -1.0
 visible = false
 layout_mode = 1
 
+[node name="Title" parent="question/Panel" index="0"]
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "BEWARE"
+
+[node name="Info" parent="question/Panel" index="2"]
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+text = "Password Length: 615124518_315142051420
+Z167R29
+ORDER:
+
+Cat"
+
 [node name="browser" parent="." instance=ExtResource("3_kskap")]
 visible = false
 layout_mode = 1
 
+[node name="Title" parent="browser/Panel" index="0"]
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Browser"
+
+[node name="Info" parent="browser/Panel" index="2"]
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+text = "No Internet Connection. 
+Try Again Later."
+
 [node name="answer" parent="." instance=ExtResource("3_kskap")]
 visible = false
 layout_mode = 1
+
+[node name="Title" parent="answer/Panel" index="0"]
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Answer"
+
+[node name="Info" parent="answer/Panel" index="2"]
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+text = "All in white"
 
 [connection signal="pressed" from="Panel/Close" to="." method="_on_close_pressed"]
 [connection signal="pressed" from="cat_png" to="." method="_on_cat_png_pressed"]
@@ -154,3 +219,11 @@ layout_mode = 1
 [connection signal="pressed" from="?" to="." method="_on__pressed"]
 [connection signal="pressed" from="Web_Browser" to="." method="_on_web_browser_pressed"]
 [connection signal="pressed" from="answer_pdf" to="." method="_on_answer_pressed"]
+
+[editable path="cat"]
+[editable path="achilles"]
+[editable path="empty"]
+[editable path="funny"]
+[editable path="question"]
+[editable path="browser"]
+[editable path="answer"]
