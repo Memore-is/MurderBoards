@@ -1,40 +1,37 @@
 extends "res://Scripts/window.gd"
 
-# Called when the node enters the scene tree for the first time.
+@onready var cat = $cat
+@onready var achilles = $achilles
+@onready var empty = $empty
+@onready var funny = $funny
+@onready var question = $question
+@onready var browser = $browser
+@onready var answer = $answer
+
 func _ready():
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+	pass 
+	
+func _process(_delta):
 	pass
 
 
-
-
 func _on_cat_png_pressed():
-	pass # Replace with function body.
-
+	cat.visible = true
 
 func _on_achilles_png_pressed():
-	pass # Replace with function body.
-
+	achilles.visible = true
 
 func _on_empty_pdf_pressed():
-	pass # Replace with function body.
-
+	empty.visible = true
 
 func _on_funny_pdf_pressed():
-	pass # Replace with function body.
-
+	funny.visible = true
 
 func _on__pressed():
-	pass # Replace with function body.
-
+	question.visible = true
 
 func _on_web_browser_pressed():
-	pass # Replace with function body.
-
+	browser.visible = true
 
 func _on_answer_pressed():
-	pass # Replace with function body.
+	answer.visible = true
