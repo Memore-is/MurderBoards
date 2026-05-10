@@ -17,4 +17,4 @@ func _on_terminal_pressed():
 	terminal.visible = true
 
 func _on_trash_pressed():
-	trash.visible = true;
+	trash.visible = true

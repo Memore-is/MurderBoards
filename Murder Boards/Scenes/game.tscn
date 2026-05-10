@@ -60,6 +60,7 @@ theme_override_fonts/font = ExtResource("5_wowpa")
 text = "Trash"
 
 [node name="Folder" parent="." instance=ExtResource("5_1l0tm")]
+visible = false
 layout_mode = 1
 offset_left = 297.0
 offset_top = 120.0
