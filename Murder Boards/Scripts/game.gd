@@ -5,7 +5,7 @@ extends Control
 @onready var trash = $Trash
 
 func _ready():
-	%rain.play()
+	$rain.play()
 	DialogueManager.show_dialogue_balloon(preload("res://Dialogue/intro.dialogue"), "start")
 	Input.set_custom_mouse_cursor(preload("res://Assets/Cursors_v2/Dark/Arrows/Arrow1.png"))
 
@@ -16,6 +16,7 @@ func _on_folder_pressed():
 	folder.visible = true
 
 func _on_terminal_pressed():
+	$PianoandVioin.play()
 	terminal.visible = true
 
 func _on_trash_pressed():

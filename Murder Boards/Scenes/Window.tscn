@@ -35,8 +35,10 @@ theme_override_font_sizes/font_size = 20
 
 [node name="Close" type="Button" parent="Panel"]
 layout_mode = 0
-offset_right = 33.0
-offset_bottom = 63.0
+offset_left = 8.0
+offset_top = 13.0
+offset_right = 41.0
+offset_bottom = 76.0
 theme_override_font_sizes/font_size = 40
 text = "X"
 

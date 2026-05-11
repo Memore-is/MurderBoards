@@ -76,6 +76,7 @@ offset_bottom = 114.0
 text = "story.pdf"
 
 [node name="hints" parent="." instance=ExtResource("3_xrvdk")]
+visible = false
 layout_mode = 1
 
 [node name="Title" parent="hints/Panel" index="0"]
@@ -86,7 +87,10 @@ text = "DON'T SCROLL DOWN
 UNLESS YOU NEED HINTS!!!!!!!!!!!"
 
 [node name="Close" parent="hints/Panel" index="1"]
-offset_right = 42.0
+offset_left = 6.0
+offset_top = 12.0
+offset_right = 48.0
+offset_bottom = 75.0
 
 [node name="Info" parent="hints/Panel" index="2"]
 offset_right = 556.0
@@ -129,8 +133,24 @@ Patroclus' death drives Achilles insane.
 Which book in Illiad?"
 
 [node name="Story_pdf" parent="." instance=ExtResource("3_xrvdk")]
-visible = false
 layout_mode = 1
+
+[node name="Title" parent="Story_pdf/Panel" index="0"]
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "The Story"
+
+[node name="Info" parent="Story_pdf/Panel" index="2"]
+offset_right = 553.0
+offset_bottom = 401.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+text = "As when a
+lion has fought some fierce wild-boar and worsted him- the two fight
+furiously upon the mountains over some little fountain at which they
+would both drink, and the lion has beaten the boar till he can
+hardly breathe-
+
+
+XVI"
 
 [node name="Scary_png" parent="." instance=ExtResource("3_xrvdk")]
 visible = false
