@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://c44hpdnafgqim"]
+[gd_scene load_steps=10 format=3 uid="uid://c44hpdnafgqim"]
 
 [ext_resource type="Script" uid="uid://beuw2y7t4m0s0" path="res://Scripts/game.gd" id="1_qxrlw"]
 [ext_resource type="Texture2D" uid="uid://darwlw361mmjv" path="res://Assets/Background/k.png" id="2_wrm1d"]
@@ -8,7 +8,6 @@
 [ext_resource type="PackedScene" uid="uid://bai43nwlog473" path="res://Scenes/terminal.tscn" id="6_v158k"]
 [ext_resource type="PackedScene" uid="uid://kdhm8d5pj44t" path="res://Scenes/trash.tscn" id="7_h4fw4"]
 [ext_resource type="AudioStream" uid="uid://x084vxm81erx" path="res://Assets/BGM/Mouse-click.wav" id="8_v158k"]
-[ext_resource type="AudioStream" uid="uid://cp4fsx4euqjuh" path="res://Assets/BGM/Rain.wav" id="9_h4fw4"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_py1g8"]
 texture = ExtResource("2_wrm1d")
@@ -58,10 +57,10 @@ text = "Folder"
 
 [node name="Trash" type="Button" parent="Panel"]
 layout_mode = 0
-offset_left = 327.0
-offset_top = 252.0
-offset_right = 387.0
-offset_bottom = 286.0
+offset_left = 352.0
+offset_top = 251.0
+offset_right = 412.0
+offset_bottom = 285.0
 theme_override_fonts/font = ExtResource("5_wowpa")
 text = "Trash"
 
@@ -83,10 +82,6 @@ layout_mode = 1
 
 [node name="mouse" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("8_v158k")
-
-[node name="rain" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("9_h4fw4")
-autoplay = true
 
 [connection signal="pressed" from="Panel/Terminal" to="." method="_on_terminal_pressed"]
 [connection signal="pressed" from="Panel/Folder" to="." method="_on_folder_pressed"]

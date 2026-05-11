@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://kdhm8d5pj44t"]
 
-[ext_resource type="Script" uid="uid://b3frgxfd43wme" path="res://Scripts/trash.gd" id="1_3xsam"]
+[ext_resource type="Script" uid="uid://b3frgxfd43wme" path="res://Scenes/trash.gd" id="1_3xsam"]
 [ext_resource type="FontFile" uid="uid://blrx20hf1j6dp" path="res://Assets/font.ttf" id="2_76yqg"]
 [ext_resource type="PackedScene" uid="uid://4hstumkc1bd7" path="res://Scenes/Window.tscn" id="3_xrvdk"]
 
@@ -76,7 +76,6 @@ offset_bottom = 114.0
 text = "story.pdf"
 
 [node name="hints" parent="." instance=ExtResource("3_xrvdk")]
-visible = false
 layout_mode = 1
 
 [node name="Title" parent="hints/Panel" index="0"]
@@ -105,10 +104,6 @@ text = "
 Start:
 
 
-
-Don't enter unsure numbers in terminal.
-
-
 Use of ciphers: caesar, A1Z26, and atbash
 
 
@@ -117,18 +112,9 @@ Password contains 6 characters
 
 Order: 
 warrior (2 clues)
-funny
 cat
 
 
-Warrior is Achilles and Ajax
-
-Tale of the warrior --> The Illiad
-
-Sleep all day --> 25 shift
-
-Patroclus' death drives Achilles insane.
-Which book in Illiad?
 
 
 
@@ -137,25 +123,6 @@ Which book in Illiad?
 [node name="Story_pdf" parent="." instance=ExtResource("3_xrvdk")]
 visible = false
 layout_mode = 1
-
-[node name="Title" parent="Story_pdf/Panel" index="0"]
-offset_right = 556.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-text = "The story
-"
-
-[node name="Info" parent="Story_pdf/Panel" index="2"]
-offset_right = 550.0
-offset_bottom = 403.0
-theme_override_colors/default_color = Color(0, 0, 0, 1)
-text = " As when a
-lion has fought some fierce wild-boar and worsted him- the two fight
-furiously upon the mountains over some little fountain at which they
-would both drink, and the lion has beaten the boar till he can
-hardly breathe
-
-
-XVI"
 
 [node name="Scary_png" parent="." instance=ExtResource("3_xrvdk")]
 visible = false
