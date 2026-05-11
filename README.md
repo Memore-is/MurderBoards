@@ -13,7 +13,7 @@ Made in Godot (with GDscript)
 
 To play the game, simply go through each file in the computer to look for clues. 
 Enter the final answer in the terminal to make it out. 
-There are a few traps in the process, so be awware of what you enter.
+There are a few traps in the process, so be aware of what you enter.
 
 I learned how to make windows and scrolling containers in godot with this project. 
 
