@@ -13,6 +13,11 @@ func _on_input_text_submitted(new_text):
 	if new_text == "Z16N29":
 		output.append_text("Correct Password./nDoor unlocking...")
 		get_tree().change_scene_to_file("res://Scenes/free.tscn")
+	
+	elif new_text == "A67Z23" or "67" or "29":
+		output.append_text("Oh no you fell into a trap!")
+		get_tree().change_scene_to_file("res://Scenes/notfree.tscn")
+	
 	else:
 		output.append_text("Wrong Password. Try Again.\n")
 		await get_tree().process_frame

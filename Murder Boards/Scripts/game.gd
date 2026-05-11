@@ -5,6 +5,7 @@ extends Control
 @onready var trash = $Trash
 
 func _ready():
+	$rain.play()
 	DialogueManager.show_dialogue_balloon(preload("res://Dialogue/intro.dialogue"), "start")
 	Input.set_custom_mouse_cursor(preload("res://Assets/Cursors_v2/Dark/Arrows/Arrow1.png"))
 
