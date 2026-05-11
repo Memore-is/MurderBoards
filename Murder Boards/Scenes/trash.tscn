@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://kdhm8d5pj44t"]
 
-[ext_resource type="Script" uid="uid://b3frgxfd43wme" path="res://Scenes/trash.gd" id="1_3xsam"]
+[ext_resource type="Script" uid="uid://b3frgxfd43wme" path="res://Scripts/trash.gd" id="1_3xsam"]
 [ext_resource type="FontFile" uid="uid://blrx20hf1j6dp" path="res://Assets/font.ttf" id="2_76yqg"]
 [ext_resource type="PackedScene" uid="uid://4hstumkc1bd7" path="res://Scenes/Window.tscn" id="3_xrvdk"]
 
@@ -57,7 +57,7 @@ offset_left = 26.0
 offset_top = 83.0
 offset_right = 140.0
 offset_bottom = 114.0
-text = "HInts"
+text = "Hints"
 
 [node name="scary" type="Button" parent="."]
 layout_mode = 0
@@ -84,6 +84,9 @@ offset_bottom = 79.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "DON'T SCROLL DOWN 
 UNLESS YOU NEED HINTS!!!!!!!!!!!"
+
+[node name="Close" parent="hints/Panel" index="1"]
+offset_right = 42.0
 
 [node name="Info" parent="hints/Panel" index="2"]
 offset_right = 556.0
@@ -112,13 +115,18 @@ Password contains 6 characters
 
 Order: 
 warrior (2 clues)
+funny
 cat
 
 
+Warrior is Achilles and Ajax
 
+Tale of the warrior --> The Illiad
 
+Sleep all day --> 25 shift
 
-"
+Patroclus' death drives Achilles insane.
+Which book in Illiad?"
 
 [node name="Story_pdf" parent="." instance=ExtResource("3_xrvdk")]
 visible = false
